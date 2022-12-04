@@ -14,7 +14,9 @@ namespace AdventOfCode2022
 
             var executorFactory = new ExecutorFactory();
             var dayImplementation = executorFactory.Create(day);
+            var resultPartOne = dayImplementation.ExecutePartOne(day);
             var result = dayImplementation.Execute(day);
+            Console.WriteLine("Result part one: " + resultPartOne);
             Console.WriteLine("Result: " + result);
         }
     }
